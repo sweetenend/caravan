@@ -9,17 +9,31 @@ a {
   text-decoration: none;
 }
 
+header, nav, h2, .main-visual, footer {
+  font-family: Chalkduster, "Bradley Hand", Courier, "Segoe Print", sans-serif;
+}
 header {
   width: 90%;
   padding: 15px 0;
   margin: 0 auto;
   text-align: center;
+  position: relative;
 }
 
 header .heading {
   font-size: 32px;
 }
 
+.social {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+}
+
+.social i {
+  display: inline-block;
+  margin-left: 20px;
+} 
 .nav-list {
   text-align: center;
   padding: 10px 0;
@@ -167,7 +181,7 @@ main {
 }
 
 .instagram-box:nth-child(odd) {
-  margin: 0 10px 10px 0;
+  margin-right: 10px;
 }
 
 .instagram-box:nth-child(1) {
@@ -202,6 +216,90 @@ footer {
   background-color: #848282;
 }
 
-.footer-color {
+.footer-text {
   color: #fff;
+}
+
+
+.sosial i {
+  color: black;
+}
+
+@media screen and (max-width:1024px) {
+  
+ header {
+   width: 100%;
+ }
+ 
+ .main-visual {
+   width: 100%;
+ }
+ 
+  footer {
+    width: 100%;
+  }
+  
+  .social i {
+    color: green;
+  }
+  
+  
+}
+
+@media screen and (max-width:768px) {
+  
+  main {
+    display: block;
+  }
+  
+  .blog {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .blog-heading {
+    width: 100%;
+  }
+  .social i {
+    color: red;
+  }
+}
+
+@media screen and (max-width:425px) {
+  
+  header {
+    width: 100%;
+  }
+  
+  .nav-list {
+    width: 100%;
+  }
+  
+  .nav-list-item {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+  
+  .social {
+    display: none;
+  }
+  
+  .main-visual-content {
+    width: 100%;
+  }
+  
+  main {
+    width: 100%;
+    display: block;
+  }
+  
+  .blog {
+    width: 100%;
+    margin: 0;
+  }
+  
+  
+  .social i {
+    color: blue;
+  }
 }
